@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Anti-Keylogger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+    <div class="nav">
+        <h1>Anti-Keylogger</h1>
+        <a href="{{ url_for('index') }}" class="btn-back">← Voltar</a>
+    </div>
+
+    <div class="container">
+
+        <div class="cards">
+            <div class="card">
+                <h2>Processos Ativos</h2>
+                <p id="process-count">Carregando...</p>
+            </div>
+            <div class="card">
+                <h2>Escaneamentos</h2>
+                <p id="scan-status">Nenhum scan iniciado</p>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Lista de Processos</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PID</th>
+                            <th>Nome do Processo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="process-table">
+                        <tr><td>-</td><td>Carregando...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel">
+            <h2>Logs do Sistema</h2>
+            <pre id="log-box">Carregando logs...</pre>
+        </div>
+
+        <form action="{{ url_for('scan') }}" method="POST" class="scan-form">
+            <button id="scan-btn" type="submit">Iniciar Escaneamento</button>
+        </form>
+    </div>
+</body>
+</html>

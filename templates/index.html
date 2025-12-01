@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Keylogger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='main.js') }}"></script>
+</head>
+<body>
+
+<div class="nav">
+    <h1>Anti-Keylogger</h1>
+    <a href="{{ url_for('dashboard') }}" class="btn-back">→ Dashboard</a>
+</div>
+
+<div class="container">
+    <div class="panel">
+        <h2>Bem-vindo ao Anti-Keylogger</h2>
+        <p>Monitore e detecte processos suspeitos no seu sistema de forma segura e rápida.</p>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-container">
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+        {% endwith %}
+
+        <form action="{{ url_for('scan') }}" method="POST" class="scan-form">
+            <button id="scan-btn" type="submit">Iniciar Escaneamento</button>
+        </form>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h2>Processos Monitorados</h2>
+            <p id="process-count">Carregando...</p>
+        </div>
+        <div class="card">
+            <h2>Status do Sistema</h2>
+            <p id="scan-status">Nenhum scan iniciado</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

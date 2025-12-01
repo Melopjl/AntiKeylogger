@@ -1,0 +1,23 @@
+{
+    "suspicious_processes": [
+        "winlogonhook",
+        "klog",
+        "keyhook",
+        "keycapture",
+        "winhook",
+        "spyhook",
+        "logger.exe",
+        "keylogger",
+        "blackshades",
+        "darkcomet"
+    ],
+    
+    "dangerous_apis": [
+        "GetAsyncKeyState",
+        "SetWindowsHookEx",
+        "ReadProcessMemory",
+        "GetForegroundWindow",
+        "GetWindowText",
+        "GetKeyboardState"
+    ]
+}
