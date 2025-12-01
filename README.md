@@ -25,7 +25,7 @@
 
 ## 📸 ???
 
-![Dashboard Preview](https://giphy.com/gifs/kJ1iL1ZQIyibu)  
+![Dashboard Preview](https://tenor.com/vI5gMQSj9xz.gif)  
 
 ---
 
