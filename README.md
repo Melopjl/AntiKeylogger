@@ -23,11 +23,6 @@
 
 ---
 
-## 📸 ???
-
-![Dashboard Preview](https://tenor.com/vI5gMQSj9xz.gif)  
-
----
 
 ## 🔴 Status Atual do Sistema
 
