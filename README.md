@@ -23,10 +23,9 @@
 
 ---
 
-## 📸 Preview
+## 📸 ???
 
-![Dashboard Preview](https://media.giphy.com/media/3o7qDEq2bMbcbPRQ2c/giphy.gif)  
-*GIF animado simulando escaneamento e logs em tempo real.*
+![Dashboard Preview](https://giphy.com/gifs/kJ1iL1ZQIyibu)  
 
 ---
 
