@@ -25,7 +25,7 @@
 
 ## 📸 ???
 
-![Dashboard Preview]("https://tenor.com/vI5gMQSj9xz.gif")  
+![Dashboard Preview](https://tenor.com/vI5gMQSj9xz.gif)  
 
 ---
 
